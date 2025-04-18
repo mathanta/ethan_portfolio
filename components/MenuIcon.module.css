@@ -1,0 +1,24 @@
+.menuIcon {
+    cursor: pointer;
+}
+
+.line {
+    transition: all 0.3s ease;
+    transform-origin: 50% 50%;
+}
+
+.menuIcon:hover .topLine,
+:global(.menuContainer:hover) .menuIcon .topLine {
+    transform: rotate(45deg) translate(0, 6px);
+}
+
+.menuIcon:hover .middleLine,
+:global(.menuContainer:hover) .menuIcon .middleLine {
+    transition: all 0.1s ease;
+    opacity: 0;
+}
+
+.menuIcon:hover .bottomLine,
+:global(.menuContainer:hover) .menuIcon .bottomLine {
+    transform: rotate(-45deg) translate(0, -6px);
+}

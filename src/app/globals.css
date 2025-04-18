@@ -1,11 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
+  --background: #222;
+  --foreground: #ddd;
+  --border: 2px dotted white;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -14,8 +12,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #222;
+    --foreground: #ddd;
   }
 }
 
@@ -23,4 +21,80 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: clamp(80px, 10px, 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  height: clamp(80px, 10px, 100px);
+  background-color: #555;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .return-to-top {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.return-to-top {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  transform: translate(-50%, -55%);
+  border-radius: 50%;
+  background-color: #555;
+  left: 50%;
+}
+
+.menuContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.mainMenu {
+  position: absolute;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.mainMenu li {
+  opacity: 0;
+  width: 75px;
+  height: 50px;
+  transition: all 0.3s ease;
+  transform-origin: top center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuContainer:hover .mainMenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menuContainer:hover .mainMenu li {
+  opacity: 1;
 }
