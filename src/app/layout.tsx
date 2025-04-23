@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-{/*import Link from 'next/link'*/}
 import MenuIcon from '../../components/MenuIcon'
 import MainMenu from '../../components/MainMenu'
+import Footer from '../../components/Footer'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,13 +34,10 @@ export default function RootLayout({
             <MainMenu />
           </div>
         </nav>
-        <main className="flex-grow">
+        <main className="flex-grow main-content">
           {children}
         </main>
-        <footer>
-          <p>This is in the footer</p>
-          <div className="return-to-top"></div>
-        </footer>
+        <Footer />
       </body>
     </html>
   );
