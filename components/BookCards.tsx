@@ -1,4 +1,5 @@
 import styles from '/src/app/about/about.module.css'
+import Image from 'next/image'
 
 interface BookProps {
     image: string;
@@ -10,7 +11,7 @@ interface BookProps {
 const BookCard = ({ image, title, author, year }: BookProps) => {
     return (
         <div className={styles.card}>
-            <img src={image} alt={`Cover of ${title}`} className={styles.cover} />
+            <Image src={image} alt={`Cover of ${title}`} className={styles.cover} width={100} height={150} />
             <div className={styles.info}>
                 <h3>{title}</h3>
                 <p>By {author}</p>
