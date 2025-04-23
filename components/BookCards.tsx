@@ -1,4 +1,4 @@
-import styles from '../../ethan_portfolio/src/app/about/about.module.css'
+import styles from '../app/about/about.module.css'
 
 interface BookProps {
     image: string;
