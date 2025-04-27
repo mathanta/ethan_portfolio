@@ -1,13 +1,11 @@
 .books {
     text-align: center;
-    display: block;
-    position: relative;
-    border: 5px double white;
-    margin-left: auto;
+    float: right;
     height: 600px;
     width: 300px;
     overflow: scroll;
     scrollbar-width: none;
+    border: 5px double white;
 }
 
 .booksheader {
@@ -17,11 +15,12 @@
 }
 
 .card {
-    height: 120px;
+    height: 140px;
     display: flex;
     padding: 1rem;
     margin: 1rem;
     gap: 1rem;
+    border: var(--border);
 }
 
 .cover {
@@ -35,4 +34,8 @@
     flex-direction: column;
     justify-content: center;
     font-size: smaller;
+}
+
+.subtitle, .year {
+    font-size: 8.5px;
 }
