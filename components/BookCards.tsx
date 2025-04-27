@@ -12,7 +12,7 @@ interface BookProps {
 const BookCard = ({ image, title, subtitle, author, year }: BookProps) => {
     return (
         <div className={styles.card}>
-            <Image src={image} alt={`Cover of ${title}`} className={styles.cover} width={100} height={150} />
+            <Image src={image} alt={`Cover of ${title}`} className={styles.cover} width={100} height={100} />
             <div className={styles.info}>
                 <h3>{title}</h3>
                 {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
