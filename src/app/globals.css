@@ -49,16 +49,6 @@ footer {
   }
 }
 
-.return-to-top {
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  transform: translate(-50%, -55%);
-  border-radius: 50%;
-  background-color: #555;
-  left: 50%;
-}
-
 .menuContainer {
   position: relative;
   display: flex;
