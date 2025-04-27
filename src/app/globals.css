@@ -18,7 +18,7 @@
 }
 
 body {
-  background: var(--background);
+  background-image: linear-gradient(175deg, var(--background),rgb(35, 35, 35),rgb(40, 40, 40), rgb(45, 45, 45),rgb(50, 50, 50), var(--foreground));
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -37,7 +37,7 @@ nav {
 }
 
 footer {
-  height: clamp(80px, 10px, 100px);
+  height: clamp(40px, 10px, 60px);
   background-color: #555;
   position: relative;
 }
