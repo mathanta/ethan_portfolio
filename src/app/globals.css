@@ -18,9 +18,17 @@
 }
 
 body {
-  background-image: linear-gradient(175deg, var(--background),rgb(35, 35, 35),rgb(40, 40, 40), rgb(45, 45, 45),rgb(50, 50, 50), var(--foreground));
+  background-image: linear-gradient(
+    175deg, 
+    var(--background),
+    rgb(35, 35, 35),
+    rgb(40, 40, 40), 
+    rgb(45, 45, 45),
+    rgb(50, 50, 50), 
+    var(--foreground));
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 .main-content {
