@@ -163,7 +163,7 @@ footer {
   scrollbar-width: none;
   border: 5px double white;
   opacity: 0;
-  animation: fadeInFromRight 0.8s ease-out 3s forwards;
+  animation: fadeInFromRight 0.6s ease-out 3s forwards;
 }
 
 .booksheader {
@@ -208,7 +208,7 @@ footer {
   margin: 2rem 0;
   margin-right: auto;
   opacity: 0;
-  animation: fadeInFromLeft 0.8s ease-out 3s forwards;
+  animation: fadeInFromLeft 0.6s ease-out 3s forwards;
 }
 
 .project-row {
