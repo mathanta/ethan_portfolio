@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 const ubuntuMono = Ubuntu_Mono({
+  variable: "--ubuntuwhite",
   weight: '400',
   subsets: ['latin'],
 })
@@ -34,7 +35,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${ubuntuMono.variable} antialiased min-h-screen flex flex-col`}>
         <main className="flex-grow main-content">
           {children}
         </main>
