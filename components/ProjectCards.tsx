@@ -47,6 +47,7 @@ const webProjects: Project[] = [
     title: "Linux Game",
     image: "/fegame-screenshot.jpg",
     description: ["This game is built with Python, inspired by Fire Emblem"],
+    link: "https://github.com/mathanta/fegame_files",
     tech: "python"
   },
   {
