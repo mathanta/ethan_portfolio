@@ -1,4 +1,4 @@
-.books {
+/*.books {
     opacity: 0;
     text-align: center;
     float: right;
@@ -23,7 +23,6 @@
     padding: 1rem;
     margin: 1rem;
     gap: 1rem;
-    /*border: var(--border);*/
 }
 
 .cover {
@@ -52,4 +51,4 @@
       opacity: 1;
       transform: translateX(0);
     }
-  }
+  }*/

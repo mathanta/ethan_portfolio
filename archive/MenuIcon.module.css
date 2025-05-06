@@ -1,4 +1,4 @@
-.menuIcon {
+/*.menuIcon {
     cursor: pointer;
 }
 
@@ -21,4 +21,4 @@
 .menuIcon:hover .bottomLine,
 :global(.menuContainer:hover) .menuIcon .bottomLine {
     transform: rotate(-45deg) translate(0, -6px);
-}
+}*/

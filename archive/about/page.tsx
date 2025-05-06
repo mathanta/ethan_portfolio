@@ -1,7 +1,7 @@
 import styles from '../about/about.module.css'
-import BookCard, { books } from '../../../components/BookCards'
+{/*import BookCard, { books } from '../../components/BookCard'*/}
 
-export default function About() {
+{/*export default function About() {
     return (
         <>
             <p className={styles.p}>Hello About</p>
@@ -18,4 +18,4 @@ export default function About() {
             </div>
         </>
     );
-}
+}*/}

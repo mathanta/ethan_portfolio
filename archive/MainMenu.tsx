@@ -1,4 +1,4 @@
-'use client'
+{/*'use client'
 import Link from 'next/link'
 
 const menuItems = [
@@ -41,4 +41,4 @@ export default function MainMenu() {
             ))}
         </ul>
     );
-}
+}*/}

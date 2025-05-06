@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Ubuntu_Mono } from 'next/font/google'
 import "./globals.css";
-import MenuIcon from '../../components/MenuIcon'
-import MainMenu from '../../components/MainMenu'
 import Footer from '../../components/Footer'
 
 const geistSans = Geist({
@@ -14,6 +13,11 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const ubuntuMono = Ubuntu_Mono({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: "Ethan Matta Portfolio",
@@ -27,13 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
-        <nav>
-          <div className="menuContainer">
-            <MenuIcon />
-            <MainMenu />
-          </div>
-        </nav>
         <main className="flex-grow main-content">
           {children}
         </main>

@@ -1,4 +1,4 @@
-import styles from "./MenuIcon.module.css";
+{/*import styles from "./MenuIcon.module.css";
 
 const MenuIcon = () => {
     return (
@@ -10,4 +10,4 @@ const MenuIcon = () => {
     );
 };
 
-export default MenuIcon;
+export default MenuIcon;*/}
