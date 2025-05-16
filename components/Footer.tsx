@@ -10,7 +10,7 @@ const Footer = () => {
                     <Image className='link-icon' src="/github.svg" alt="github logo" width={30} height={30} />
                 </Link>
                 <Link href="https://linkedin.com/in/yourprofile">
-                    <Image className='link-icon' src="/linkedin.svg" alt="linkedin logo" width={30} height={30} />
+                    <Image id='linkedin' className='link-icon' src="/linkedin.svg" alt="linkedin logo" width={30} height={30} />
                 </Link>
             </div>
             <div className="footer-right">

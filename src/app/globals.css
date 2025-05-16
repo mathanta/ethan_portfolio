@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+#linkedin { 
+  display: none;
+}
+
 :root {
   --background: #222;
   --foreground: #ddd;
@@ -226,7 +230,12 @@ footer {
   cursor: pointer;
   flex: 0.5;
   position: relative;
-  transition: all 700ms ease-in;
+  transition: all 700ms ease-in, box-shadow 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+  cursor: default;
+}
+
+.project-panel:hover {
+  box-shadow: 0rem 0rem 0.5rem var(--foreground);
 }
 
 .project-panel::before {
