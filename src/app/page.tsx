@@ -1,10 +1,10 @@
 "use client"
 import BookSection from '../../components/BookSection';
 import ProjectCards from '../../components/ProjectCards';
-import TechCards from '../../components/TechCards'
+/*import TechCards from '../../components/TechCards';*/
 import "./globals.css";
 import { useState, useEffect } from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Main() {
   const [text, setText] = useState("");
